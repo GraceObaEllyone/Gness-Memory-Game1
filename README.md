@@ -10,10 +10,10 @@
 
 This project is a summary of study from the fourth and fifth module of the Full Stack Developer Course - JavaScript Fundamentals & Interactive Frontend Development, to build a custom, mobile-first, fully responsive Vanilla JavaScript memory game.
 
-The purpose of the game is to improve memory skills. Players can race against the countdown timer and keep track of their scores to see how well their memory skills are improving. The game is short and mobile-friendly so it's ideal for pl!
+The purpose of the game is to improve memory skills. Players can race against the countdown timer and keep track of their scores to see how well their memory skills are improving. 
 
 
-[Game Plan](assets/Plan.png)
+![Game Plan](assets/Plan.png)
 ## Table of contents
 
 - <a href="#about">ABOUT</a>
@@ -180,61 +180,46 @@ The main image in main menu section is Emmet which is well know character from L
 
 
 This is the first screen presented to the player. There are four main buttons:
-- Play - After pressing this button, difficulty level modal pop up. After choosing level the game will start.
-  	- Cancel button will dismiss modal.
+- Play - After clicking on the mouse, Arrow will change position . After choosing level the game will start..
 
   
-- About - After pressing this button, about modal pop up. Player can check game rules, scoring system and benefits of playing memory games.
-  - Close button will dismiss modal.
+- About - After clicking mouse and arrow hit the centre scoring system start countin
 
- 
-
-- Highscores - After pressing this button, highscores modal pop up. Player can check scores for each difficulty level, they are sorted by points from high to low. Scores are stored in local storage and best 5 scores for level will be presented. Hover effect will highlight selected row.
-  - Clear scores button will trigger confirmation modal.
+- Highscores - After clicking mouse, meter starts reading on hitting the right tarhet in the centre. Scores are stored in local memory and in 3 chance thay can have high scores 
   
-  "Yes" will clear local storage and delete rows with scores for each level when "No" will close confirmation modal.
+  "Yes" will clear local memory and delete previous counter with scores for each target when "No" will close confirmation modal.
   
-  - Close button will dismiss modal.
+  - Game will dismiss modal.
 
   
 
-- Arrow - After clicking the mouse the arrow start appears coming from left directionn with main target is the centre of the dart board. User can check who developed game and find contact information. There is also an evalution section and details of the devloper with special thanks to my mento.
+- Arrow - After clicking the mouse the arrow start appears coming from left directionn with main target is the centre of the dart board. User can check who developed game and find contact information. There is also an evalution section and details of the devloper with special thanks to my mentor.
   - Close button will dismiss modal.
 
 #### Game Arena:
 
-Cards are displayed in the middle of the game arena. The number of cards depends on level (easy: 8, medium: 12, hard: 16). When player clicks on a card, the card turns and the picture side of the card is presented. When two cards match they will stay on the screen, if don't they will reverse back. The main features are:
+BSL Video and English Text displayed in the middle of the game arena. The times arrow meet the target depends on score and chances. When clicks on a canvas, the video and text  is presented. 
 
-- Points - They are increase every time player match 2 cards and decrease when doesn't match.
-
-- Level - There are three levels: easy, medium, hard. Display depends on level.
 
 - Time - There is 60 sec to complete the level. Timer counts down when the game starts.
 
 - Turn counter - Increases by 1 every time player reveal 2 cards.
 
-- Quit - After pressing this button player will be redirected to main menu. From the he can start new game again.
+- Quit - After 10sec the appear, game will restart again.
 
-- Volume icon - Pressing this icon will toggle on/off audio in the application.
+-
 
 #### End of the game:
 
 Lose:
-- Times up - Times up modal will pop up when timer reach 0. Adequate audio will play. Player will have option to play level again or quit.
-  - Yes button will reset level again.
-  - No button will redirect to main menu.
-
-  
+-User loss after missing the targer 3 chances
+  - No button will redirect to main menu
 
 Win:
-- Game win - Game win modal will pop up when player match all pairs before times up. Adequate audio will play. This modal contain total score for played game. In input field player can put his name.
-  - Save button will save score and optionally name in local storage. If score is within best 5 scores it will be displayed in level highscores modal.
-  - Close button will redirect to main menu without saving.
+- Game win - If without missing the targer and have a high score
 
-
-
-- Level highscores - This modal will pop up when player click save button in game win modal. It shows best scores only for current level. Hover effect will highlight selected row.
-  - Clear scores button will clear local storage and delete rows with scores only for current level.
+- Level highscores - the counter show the level of high score.
+  - Clear scores button will clear local memory 
   - Close button will redirect to main menu.
 
  
@@ -263,8 +248,6 @@ Passing the HTML file content through the W3C Validator for HTML resulted in no 
 
 I used JSHint to validate JavaScript file configured to accept jQuery & ES6 features like const and let variables. There was no major warnings but this test allowed me to see where I had missing semi-colons from block of code and detect unused variables.
 
-The project contains as much vanilla JavaScript as possible to allow the developer to understand the language appropriately. jQuery was used in total of four times to target the modal elements to show/hide.
-
 CSS file content was regularly checked in the W3C Validator for CSS to ensure any errors were spotted throughout the development of the style sheet. As with the HTML validation if any errors were present they were checked in DevTools and then copy and pasted over to the code before committing and pushing the updated code to my GitHub Repository.
 
 <p id="ustesting"></p>
@@ -273,14 +256,14 @@ CSS file content was regularly checked in the W3C Validator for CSS to ensure an
 
  Here are the steps and results from the testing carried based on the project user stories to determine that the game and functionality are fit for purpose
  
- Result: Game works as expected. There is a problem with "match" audio when two pairs reversed in short amount of time, there is no audio confirmation for second pair. This is more obvious on mobile where it is easier to tap many cards quickly.
+ Result: Game works as expected. 
 
-Result: Game works as it should. All scores are grouped in correct level tables.
+Result: Game works as it should.
 
 <p id="bugs"></p>
 
 Bugs:
-- Site works on only desktop devices .
+- Site works on only desktop/laptops devices .
 
 <div align="center"><p style="text-align: center"><a href="#top">Back to top ⬆️</a></p></div>
 
