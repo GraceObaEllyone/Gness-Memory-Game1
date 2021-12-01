@@ -283,7 +283,7 @@ In order to deploy the website to GitHub pages, I:
 
 - Page auto refreshed and link generated under GitHub Pages section:
 
-  👉 Your site is published at https://zokam1411.github.io/milestone-project-2/
+  👉 Your site is published at https://graceobaellyone.github.io/Gness-Memory-Game1/
 
 ### Run this project locally:
 
