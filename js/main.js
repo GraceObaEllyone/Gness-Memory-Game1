@@ -186,115 +186,118 @@ var missed = false;
 function draw() {
     background(0);
 
-    //Draw Dart Board 
-    dartBoard();
 
-    if (!missed) {
-        drawArrow(x, y);
-        x += 1;
-    }
+    if (ready) {
 
+        //Draw Dart Board 
+        dartBoard();
 
-    //Draw Arrow
-
-    if (x > width / 2) {
-        x = -100;
-        /// y += (round(random(-100, 100)))
-    }
-
-    if (dist(width / 2, height / 2, x, y) <= 50) {
-
-        setTimeout(function() { slectedRand = true }, 12000);
-
-        if (slectedRand) {
-            ranVid = round(random(12));
-            slectedRand = false;
+        if (!missed) {
+            drawArrow(x, y);
+            x += 1;
         }
 
 
-        signLang[ranVid].video.loop();
-        textSize(30)
-        fill(255);
-        text("Good Shot", width / 2 - 600, height / 2);
+        //Draw Arrow
 
-
-        playing = true;
-        scoring = true;
-    }
-
-    if (x >= width / 2 && dist(width / 2, height / 2, x, y) >= 60) {
-        textSize(30)
-        fill(255);
-        text("You missed", width / 2 - 600, height / 2);
-        if (chances > 0)
-            chances--;
-
-    }
-
-
-    if (chances == 0) {
-        missed = true;
-    }
-
-
-    if (missed) {
-        textSize(30)
-        fill(255);
-        text("Game over", width / 2 + 600, height / 2);
-    }
-
-    showScore();
-
-    if (scoring) {
-
-
-        score += 20;
-        scoring = false;
-    }
-
-    //Playing Sign Video
-    if (playing) {
-
-        textAlign(CENTER, CENTER);
-        text(score, width / 2, height / 2);
-
-        signLang[ranVid].video.loop();
-        image(signLang[ranVid].video, width / 2 + 300, height / 2 - 200, 400, 400);
-        fill(255)
-        textSize(25);
-        textStyle(BOLD);
-        textAlign(CENTER, CENTER);
-        text(signLang[ranVid].text, width / 2 + 400, height / 2);
-        setTimeout(function() { playing = false }, 10000);
-    }
-
-
-    if (happy) {
-        for (i = 0; i < bubbles.length; i++) {
-            bubbles[i].move();
-            bubbles[i].show();
-            bubbles[i].col();
-        }
-        setTimeout(function() {
-            happy = false;
-        }, 8000);
-    }
-
-
-    if (showHearts) {
-        for (i = 0; i < hearts.length; i++) {
-            hearts[i].move();
-            hearts[i].show();
-            hearts[i].col();
+        if (x > width / 2) {
+            x = -100;
+            /// y += (round(random(-100, 100)))
         }
 
-        console.log(heart)
-        setTimeout(function() {
-            showHearts = false;
-        }, 8000);
+        if (dist(width / 2, height / 2, x, y) <= 50) {
+
+            setTimeout(function() { slectedRand = true }, 12000);
+
+            if (slectedRand) {
+                ranVid = round(random(12));
+                slectedRand = false;
+            }
+
+
+            signLang[ranVid].video.loop();
+            textSize(30)
+            fill(255);
+            text("Good Shot", width / 2 - 600, height / 2);
+
+
+            playing = true;
+            scoring = true;
+        }
+
+        if (x >= width / 2 && dist(width / 2, height / 2, x, y) >= 60) {
+            textSize(30)
+            fill(255);
+            text("You missed", width / 2 - 600, height / 2);
+            if (chances > 0)
+                chances--;
+
+        }
+
+
+        if (chances == 0) {
+            missed = true;
+        }
+
+
+        if (missed) {
+            textSize(30)
+            fill(255);
+            text("Game over", width / 2 + 600, height / 2);
+        }
+
+        showScore();
+
+        if (scoring) {
+
+
+            score += 20;
+            scoring = false;
+        }
+
+        //Playing Sign Video
+        if (playing) {
+
+            textAlign(CENTER, CENTER);
+            text(score, width / 2, height / 2);
+
+            signLang[ranVid].video.loop();
+            image(signLang[ranVid].video, width / 2 + 300, height / 2 - 200, 400, 400);
+            fill(255)
+            textSize(25);
+            textStyle(BOLD);
+            textAlign(CENTER, CENTER);
+            text(signLang[ranVid].text, width / 2 + 400, height / 2);
+            setTimeout(function() { playing = false }, 10000);
+        }
+
+
+        if (happy) {
+            for (i = 0; i < bubbles.length; i++) {
+                bubbles[i].move();
+                bubbles[i].show();
+                bubbles[i].col();
+            }
+            setTimeout(function() {
+                happy = false;
+            }, 8000);
+        }
+
+
+        if (showHearts) {
+            for (i = 0; i < hearts.length; i++) {
+                hearts[i].move();
+                hearts[i].show();
+                hearts[i].col();
+            }
+
+            console.log(heart)
+            setTimeout(function() {
+                showHearts = false;
+            }, 8000);
+        }
+
     }
-
-
 
 }
 
