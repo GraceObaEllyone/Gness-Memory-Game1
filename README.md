@@ -13,7 +13,7 @@ This project is a summary of study from the fourth and fifth module of the Full 
 The purpose of the game is to improve memory skills. Players can race against the countdown timer and keep track of their scores to see how well their memory skills are improving. The game is short and mobile-friendly so it's ideal for pl!
 
 
-[Game Plan](assets/Plan.png)
+![Game Plan](assets/Plan.png)
 ## Table of contents
 
 - <a href="#about">ABOUT</a>
