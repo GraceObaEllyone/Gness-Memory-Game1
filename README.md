@@ -198,7 +198,7 @@ This is the first screen presented to the player. There are four main buttons:
 
 #### Game Arena:
 
-BSL Video and English Text displayed in the middle of the game arena. The times arrow meet the target depends on score and chances. When clicks on a canvas, the video and text  is presented. 
+BSL Video https://www.signbsl.com/ and English Text displayed in the middle of the game arena. The times arrow meet the target depends on score and chances. When clicks on a canvas, the video and text  is presented. 
 
 
 - Time - There is 60 sec to complete the level. Timer counts down when the game starts.
@@ -342,8 +342,8 @@ In order to deploy the website to GitHub pages, I:
 
 <p id="ack"></p>
 
-### Acknowledgments:
-
+### Acknowledgments:_
+-<a href ="https://www.signbsl.com" rel="noopener" target=" _blank>British Sign Language BSL Dictionary</a>
 - <a href="https://codeinstitute.net" rel="noopener" target="_blank">Code Institute</a>
 - <a href="https://stackoverflow.com/" rel="noopener" target="_blank">Stack Overflow</a>
 - Code Institute Slack Community.
