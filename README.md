@@ -343,11 +343,12 @@ In order to deploy the website to GitHub pages, I:
 <p id="ack"></p>
 
 ### Acknowledgments:_
--<a href ="https://www.signbsl.com" rel="noopener" target=" _blank>British Sign Language BSL Dictionary</a>
+-<a href=https://www.signbsl.com/"rel="noopener"target="_blank>British Sign Language BSL Dictionary</a>
 - <a href="https://codeinstitute.net" rel="noopener" target="_blank">Code Institute</a>
 - <a href="https://stackoverflow.com/" rel="noopener" target="_blank">Stack Overflow</a>
 - Code Institute Slack Community.
 - My mentor Guido Cecilio for guidance and support.
 - My family and friends for their patience and honest critique throughout.
+- My Personal Tutor
 
 <div align="center"><p style="text-align: center"><a href="#top">Back to top ⬆️</a></p></div>
